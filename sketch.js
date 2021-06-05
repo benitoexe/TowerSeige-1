@@ -22,9 +22,9 @@ function setup() {
   world = engine.world;
   Engine.run(engine);
   ground = new Ground();
-  stand1 = new Stand(390,300,250,10);
+  stand1 = new Stand(390,370,250,10);
   stand2 = new Stand(800,300,200,10);
-  ball = new Polygon(200,200,20);
+  ball = new Polygon(200,500,20);
 
   //LEVEL ONE
   block1 = new Block(300,275,30,40);
@@ -71,7 +71,7 @@ function setup() {
 
   block35 = new Block(795,70,30,40);
 
-  sling_Shot = new SlingShot(ball.body,{x:200,y:200});
+  sling_Shot = new SlingShot(ball.body,{x:100,y:300});
 
 }
 
